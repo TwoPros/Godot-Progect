@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ctgmnxy568e7h"]
+
+[ext_resource type="Script" uid="uid://clgvxn6n8rccw" path="res://camera_3d.gd" id="1_a202f"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4xowi"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_a202f"]
+
+[node name="Node3D" type="Node3D" unique_id=1538327031]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=172345093]
+transform = Transform3D(3.2649457, 0, 0, 0, 3.7563126, 0, 0, 0, 6.7658906, 0.84069324, -0.5201956, 0.41228867)
+mesh = SubResource("PlaneMesh_4xowi")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1227608102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5311766, 0)
+fov = 145.28491
+script = ExtResource("1_a202f")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1682310127]
+transform = Transform3D(0.9999857, 0.0045606815, -0.0028051105, -0.00453842, 0.9999586, 0.007889354, 0.0028409855, -0.007876505, 0.99996495, 0.4075179, 0.2996446, -2.5540113)
+mesh = SubResource("CapsuleMesh_a202f")
